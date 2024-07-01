@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   servicesCard();
   nouvelleCard();
   menuComponent();
+  contactModal();
 });
 
 // carousel slide
@@ -51,7 +52,12 @@ async function initializeCarousel() {
     );
 
     const textElement = document.createElement("p");
-    textElement.classList.add("text-white", "text-lg", "md:text-2xl");
+    textElement.classList.add(
+      "text-white",
+      "text-lg",
+      "md:text-2xl",
+      "font-bold"
+    );
     textElement.innerText = slide.text;
 
     const buttonElement = document.createElement("button");
@@ -168,6 +174,7 @@ async function initializeCarousel() {
 async function servicesCard() {
   const serviceContainer = document.querySelector(".service_container");
   const serviceCardContent = document.getElementById("service_card_content");
+  const serviceCardTitle = document.getElementById("service_card_title");
 
   let currentServiceItem = 1;
 
@@ -200,8 +207,9 @@ async function servicesCard() {
     );
 
     if (currentServiceItem === index + 1) {
-      if (serviceCardContent) {
+      if (serviceCardContent && serviceCardTitle) {
         serviceCardContent.innerText = service.text;
+        serviceCardTitle.innerText = service.title;
       }
     }
 
@@ -211,7 +219,7 @@ async function servicesCard() {
     imgElement.classList.add("h-[80px]", "w-[80px]", "object-contain");
 
     const pElement = document.createElement("p");
-    pElement.classList.add("text-[16px]");
+    pElement.classList.add("text-[16px]", "font-semibold");
     pElement.textContent = service.title;
 
     // Append elements to the service item
@@ -244,6 +252,7 @@ async function servicesCard() {
 
       if (currentServiceItem === index + 1) {
         serviceCardContent.innerText = service.text;
+        serviceCardTitle.innerText = service.title;
       }
     });
 
@@ -295,7 +304,12 @@ async function nouvelleCard() {
     );
 
     const dateContenetContainerElement = document.createElement("div");
-    dateContenetContainerElement.classList.add("flex", "justify-between");
+    dateContenetContainerElement.classList.add(
+      "flex",
+      "justify-between",
+      "font-semibold",
+      "text-[16px]"
+    );
 
     const dateElement = document.createElement("div");
     dateElement.textContent = nouvelle.date;
@@ -307,6 +321,7 @@ async function nouvelleCard() {
     dividerElement.classList.add("bg-white", "h-[1px]", "w-full", "my-2");
 
     const contentElement = document.createElement("div");
+    contentElement.classList.add("text-[14px]");
     contentElement.textContent = nouvelle.text;
 
     // Append elements to the date content container
@@ -348,5 +363,26 @@ function menuComponent() {
       menu_nav_container.classList.remove("invisible");
       menu_nav_container.classList.add("visible");
     }
+  });
+}
+
+// contact pop-up modal
+function contactModal() {
+  const contact_modal = document.getElementById("contact_modal");
+  const pop_modal_button = document.getElementById("pop_modal_button");
+  const close_contact_modal = document.getElementById("close_contact_modal");
+
+  // display pop-up modal
+  pop_modal_button.addEventListener("click", () => {
+    contact_modal.classList.remove("hidden");
+    contact_modal.classList.add("flex");
+  });
+
+  // close pop-up modal
+  close_contact_modal.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    contact_modal.classList.remove("flex");
+    contact_modal.classList.add("hidden");
   });
 }

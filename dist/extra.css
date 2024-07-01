@@ -5,6 +5,7 @@
   line-height: 28px !important;
   text-transform: uppercase !important;
   color: #ffffff !important;
+  transition: all 0.3s ease-in;
 }
 .menu-items:hover {
   color: #dda15e !important;
@@ -28,4 +29,14 @@
 }
 footer > img {
   height: 59px;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-items {
+    font-size: 20px !important;
+  }
+  
+  .title-text{
+    font-size: 28px !important;
+  }
 }

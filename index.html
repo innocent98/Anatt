@@ -85,10 +85,9 @@
 
       <!-- Nav -->
       <nav
-        class="shadow-lg lg:flex px-28 py-4 text-white justify-center gap-20 text-lg items-center navbar hidden"
-        style=""
+        class="shadow-lg lg:flex p-4 text-white justify-center gap-20 text-lg items-center navbar hidden"
       >
-        <a href="/" class="flex items-center gap-2 uppercase"
+        <a href="/" class="flex items-center gap-2 uppercase menu-items"
           >ANaTT
           <span class="material-symbols-outlined">
             keyboard_arrow_down
@@ -100,41 +99,49 @@
             keyboard_arrow_down
           </span></a
         >
-        <a href="/services.html" class="uppercase">Services en Ligne</a>
-        <a href="/publications.html" class="flex items-center gap-2 uppercase"
+        <a href="/services.html" class="uppercase menu-items"
+          >Services en Ligne</a
+        >
+        <a
+          href="/publications.html"
+          class="flex items-center gap-2 uppercase menu-items"
           >Publications
           <span class="material-symbols-outlined">
             keyboard_arrow_down
           </span></a
         >
-        <a href="/contact.html" class="uppercase">Contact</a>
+        <a href="/contact.html" class="uppercase menu-items">Contact</a>
       </nav>
 
       <!-- responsive nav -->
       <nav
-        class="w-full bg-primary text-white flex flex-col absolute -bottom-52 p-4 gap-4 shadow-lg lg:hidden"
+        class="w-full navbar text-white flex flex-col absolute -bottom-52 p-4 gap-4 shadow-lg lg:hidden"
         id="menu_nav_container"
       >
-        <a href="/" class="flex items-center gap-2"
+        <a href="/" class="flex items-center gap-2 uppercase menu-items"
           >ANaTT
           <span class="material-symbols-outlined">
             keyboard_arrow_down
           </span></a
         >
-        <a href="/prestations.html" class="flex items-center gap-2"
+        <a href="/prestations.html" class="flex items-center gap-2 menu-items"
           >Nos Prestations
           <span class="material-symbols-outlined">
             keyboard_arrow_down
           </span></a
         >
-        <a href="/services.html">Services en Ligne</a>
-        <a href="/publications.html" class="flex items-center gap-2"
+        <a href="/services.html" class="uppercase menu-items"
+          >Services en Ligne</a
+        >
+        <a
+          href="/publications.html"
+          class="flex items-center gap-2 uppercase menu-items"
           >Publications
           <span class="material-symbols-outlined">
             keyboard_arrow_down
           </span></a
         >
-        <a href="/contact.html">Contact</a>
+        <a href="/contact.html" class="uppercase menu-items">Contact</a>
       </nav>
     </div>
 
@@ -171,8 +178,11 @@
           <div
             class="w-[100%] lg:w-[33.3%] bg-lightgray p-4 rounded-lg shadow-2xl flex flex-col gap-3"
           >
-            <div class="text-primary text-2xl font-semibold">
-              Attestation de succès à l’examen de permis de conduire
+            <div
+              class="text-primary text-2xl font-semibold"
+              id="service_card_title"
+            >
+              <!-- Service title will be dynamically inserted here -->
             </div>
 
             <p id="service_card_content">
@@ -233,7 +243,9 @@
               class="custom-gray p-2 rounded-md lg:rounded-r-none flex flex-col gap-2"
             >
               <div class="flex items-center">
-                <div class="text-primary text-[20px] font-medium">
+                <div
+                  class="text-black font-semibold text-[20px] md:text-[23px]"
+                >
                   Nikki - Kalalé
                 </div>
 
@@ -247,7 +259,7 @@
                   straighten
                 </span>
 
-                <div class="font-medium text-[16px]">
+                <div class="font-semibold text-[17px]">
                   Longueur: <span class="font-normal">35Km</span>
                 </div>
               </div>
@@ -257,8 +269,8 @@
                   local_shipping
                 </span>
 
-                <div class="font-medium text-[16px]">
-                  Volume de trafic::
+                <div class="font-semibold text-[17px]">
+                  Volume de trafic:
                   <span class="font-normal">70 camions/jour</span>
                 </div>
               </div>
@@ -268,7 +280,9 @@
               class="custom-gray p-2 rounded-md lg:rounded-r-none flex flex-col gap-2"
             >
               <div class="flex items-center">
-                <div class="text-primary text-[20px] font-medium">
+                <div
+                  class="text-black font-semibold text-[20px] md:text-[23px]"
+                >
                   Ouidah - Kpomassè
                 </div>
 
@@ -282,7 +296,7 @@
                   straighten
                 </span>
 
-                <div class="font-medium text-[16px]">
+                <div class="font-semibold text-[17px]">
                   Longueur: <span class="font-normal">35Km</span>
                 </div>
               </div>
@@ -292,7 +306,7 @@
                   local_shipping
                 </span>
 
-                <div class="font-medium text-[16px]">
+                <div class="font-semibold text-[17px]">
                   Volume de trafic::
                   <span class="font-normal">70 camions/jour</span>
                 </div>
@@ -303,7 +317,9 @@
               class="custom-gray p-2 rounded-md lg:rounded-r-none flex flex-col gap-2"
             >
               <div class="flex items-center">
-                <div class="text-primary text-[20px] font-medium">
+                <div
+                  class="text-black font-semibold text-[20px] md:text-[23px]"
+                >
                   Dassa Zoume - Bohicon
                 </div>
 
@@ -317,7 +333,7 @@
                   straighten
                 </span>
 
-                <div class="font-medium text-[16px]">
+                <div class="font-semibold text-[17px]">
                   Longueur: <span class="font-normal">35Km</span>
                 </div>
               </div>
@@ -327,7 +343,7 @@
                   local_shipping
                 </span>
 
-                <div class="font-medium text-[16px]">
+                <div class="font-semibold text-[17px]">
                   Volume de trafic::
                   <span class="font-normal">70 camions/jour</span>
                 </div>
@@ -366,18 +382,18 @@
             class="flex lg:flex-col w-full justify-center lg:w-[300px] h-[120px] lg:h-[350px]"
           >
             <div
-              class="bg-secondary p-4 flex flex-col items-center justify-center rounded-lg lg:rounded-tl-lg gap-2 w-[40%] lg:w-auto lg:h-[50%] shadow-lg cursor-pointer"
+              class="bg-secondary p-4 flex flex-col items-center justify-center rounded-lg lg:rounded-tl-lg gap-2 w-[40%] lg:w-auto lg:h-[50%] shadow-2xl cursor-pointer"
             >
               <img src="./assets/svgs/newspaper.svg" alt="" />
-              <div class="text-white text-[20px] font-semibold uppercase">
+              <div class="text-white text-[25px] font-semibold uppercase">
                 Actualites
               </div>
             </div>
             <div
-              class="custom-gray-200 p-4 flex flex-col items-center justify-center rounded-lg lg:rounded-bl-lg gap-2 w-[40%] lg:w-auto lg:h-[50%] shadow-lg cursor-pointer"
+              class="custom-gray-200 p-4 flex flex-col items-center justify-center rounded-lg lg:rounded-bl-lg gap-2 w-[40%] lg:w-auto lg:h-[50%] shadow-2xl cursor-pointer"
             >
               <img src="./assets/svgs/video.svg" alt="" />
-              <div class="text-black text-[20px] font-semibold uppercase">
+              <div class="text-black text-[25px] font-semibold uppercase">
                 Videos
               </div>
             </div>
@@ -408,7 +424,7 @@
             <div class="flex-[2]">
               <div class="flex justify-between items-start lg:items-center">
                 <div class="flex flex-col lg:w-[70%]">
-                  <div class="text-primary font-bold text-[22px] uppercase">
+                  <div class="text-primary font-bold text-[23px] uppercase">
                     OBTENEZ DESOMAIS L'IMMATRICULATION DE VOTRE MOTO EN LIGNE
                   </div>
                   <div class="font-normal text-[18px]">
@@ -438,7 +454,7 @@
             <div class="flex-[2]">
               <div class="flex justify-between items-start lg:items-center">
                 <div class="flex flex-col lg:w-[70%]">
-                  <div class="text-primary font-bold text-[22px] uppercase">
+                  <div class="text-primary font-bold text-[23px] uppercase">
                     Verifier la disponibilité de votre permis de conduire
                   </div>
                   <div class="font-normal text-[18px]">
@@ -470,7 +486,7 @@
             <div class="flex-[2]">
               <div class="flex justify-between items-start lg:items-center">
                 <div class="flex flex-col lg:w-[70%]">
-                  <div class="text-primary font-bold text-[22px] uppercase">
+                  <div class="text-primary font-bold text-[23px] uppercase">
                     SECUROUTE
                   </div>
                   <div class="font-normal text-[18px]">
@@ -505,7 +521,7 @@
         class="p-10 w-full flex flex-col gap-4 bg-lightgray items-center justify-center"
       >
         <div
-          class="text-primary text-2xl font-bold text-center lg:mb-8 uppercase"
+          class="text-primary text-2xl font-bold text-center lg:mb-8 uppercase title-text"
         >
           NOS PARTENAIRES
         </div>
@@ -526,10 +542,10 @@
         class="p-4 w-full flex lg:flex-row flex-col gap-10 bg-primary items-center justify-between"
       >
         <!-- left -->
-        <div class="w-full lg:w-[45%] text-white">
+        <div class="w-full lg:w-[45%] text-white flex flex-col gap-2">
           <div class="text-[24px] font-bold">RESTEZ INFORMÉS</div>
 
-          <div class="text-[17px]">
+          <div class="text-[18px]">
             Abonnez-vous pour recevoir périodiquement l'actualité de l'Agence
             Nationale des Transports Terrestres. Votre adresse de messagerie est
             uniquement utilisée pour vous envoyer des informations relatives à

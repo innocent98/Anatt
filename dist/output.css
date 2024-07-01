@@ -68,6 +68,10 @@ body {
   /* 2 */
 }
 
+div {
+  font-family: "Montserrat", sans-serif;
+}
+
 /*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
@@ -104,6 +108,7 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*
@@ -113,6 +118,7 @@ Reset links to optimize for opt-in styling instead of opt-out.
 a {
   color: inherit;
   text-decoration: inherit;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*
@@ -200,7 +206,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
+  font-family: "Montserrat", sans-serif;
   /* 1 */
   font-feature-settings: inherit;
   /* 1 */
@@ -229,6 +235,7 @@ Remove the inheritance of text transform in Edge and Firefox.
 button,
 select {
   text-transform: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*
@@ -339,6 +346,7 @@ figure,
 p,
 pre {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 fieldset {
