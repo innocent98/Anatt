@@ -1,0 +1,31 @@
+.menu-items {
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 23px !important;
+  line-height: 28px !important;
+  text-transform: uppercase !important;
+  color: #ffffff !important;
+}
+.menu-items:hover {
+  color: #dda15e !important;
+}
+.title-text {
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 36px !important;
+  line-height: 44px !important;
+  text-transform: uppercase !important;
+  padding: 20px 0;
+}
+.custom-gray {
+  background-color: #d9d9d9;
+}
+.custom-light-blue {
+  background-color: #ebf0f6;
+}
+.navbar {
+  background-color: rgba(3, 64, 120, 1);
+}
+footer > img {
+  height: 59px;
+}

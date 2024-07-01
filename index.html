@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./dist/output.css" rel="stylesheet" />
+    <link href="./dist/extra.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -84,29 +85,29 @@
 
       <!-- Nav -->
       <nav
-        class="shadow-lg lg:flex px-28 py-4 text-white justify-center gap-20 text-lg items-center hidden"
-        style="background-color: rgba(3, 64, 120, 1)"
+        class="shadow-lg lg:flex px-28 py-4 text-white justify-center gap-20 text-lg items-center navbar hidden"
+        style=""
       >
-        <a href="/" class="flex items-center gap-2"
+        <a href="/" class="flex items-center gap-2 uppercase"
           >ANaTT
           <span class="material-symbols-outlined">
             keyboard_arrow_down
           </span></a
         >
-        <a href="/prestations.html" class="flex items-center gap-2"
+        <a href="/prestations.html" class="flex items-center gap-2 menu-items"
           >Nos Prestations
           <span class="material-symbols-outlined">
             keyboard_arrow_down
           </span></a
         >
-        <a href="/services.html">Services en Ligne</a>
-        <a href="/publications.html" class="flex items-center gap-2"
+        <a href="/services.html" class="uppercase">Services en Ligne</a>
+        <a href="/publications.html" class="flex items-center gap-2 uppercase"
           >Publications
           <span class="material-symbols-outlined">
             keyboard_arrow_down
           </span></a
         >
-        <a href="/contact.html">Contact</a>
+        <a href="/contact.html" class="uppercase">Contact</a>
       </nav>
 
       <!-- responsive nav -->
@@ -150,8 +151,10 @@
       </div>
 
       <!-- services -->
-      <div class="p-4 w-full flex flex-col bg-gray items-center justify-center">
-        <div class="text-primary text-2xl font-bold text-center uppercase">
+      <div
+        class="p-10 w-full flex flex-col custom-gray items-center justify-center"
+      >
+        <div class="text-primary text-2xl font-bold text-center title-text">
           Services en Lignes
         </div>
 
@@ -182,8 +185,8 @@
               <span
                 class="material-symbols-outlined text-secondary text-[18px]"
               >
-                schedule
-              </span>
+                schedule </span
+              >&nbsp;
               <div class="text-primary font-medium">
                 Durée estimée: <span class="font-normal text-black">24h</span>
               </div>
@@ -193,10 +196,11 @@
               <span
                 class="material-symbols-outlined text-secondary text-[18px]"
               >
-                payments
-              </span>
+                payments </span
+              >&nbsp;
               <div class="text-primary font-medium">
-                Durée estimée: <span class="font-normal text-black">24h</span>
+                Coût de service:
+                <span class="font-normal text-black">2000 FCFA</span>
               </div>
             </div>
 
@@ -213,9 +217,11 @@
 
       <!-- corridor -->
       <div
-        class="p-4 w-full bg-white flex flex-col items-center justify-center py-8"
+        class="p-10 w-full bg-white flex flex-col items-center justify-center py-8"
       >
-        <div class="text-primary text-2xl font-bold text-center mb-2 uppercase">
+        <div
+          class="text-primary text-2xl font-bold text-center mb-2 title-text"
+        >
           LES AXES DE CORRIDOR
         </div>
 
@@ -224,7 +230,7 @@
         >
           <div class="lg:w-[30%] md:w-[60%] w-[100%] flex flex-col gap-3">
             <div
-              class="bg-gray p-2 rounded-md lg:rounded-r-none flex flex-col gap-2"
+              class="custom-gray p-2 rounded-md lg:rounded-r-none flex flex-col gap-2"
             >
               <div class="flex items-center">
                 <div class="text-primary text-[20px] font-medium">
@@ -259,7 +265,7 @@
             </div>
 
             <div
-              class="bg-gray p-2 rounded-md lg:rounded-r-none flex flex-col gap-2"
+              class="custom-gray p-2 rounded-md lg:rounded-r-none flex flex-col gap-2"
             >
               <div class="flex items-center">
                 <div class="text-primary text-[20px] font-medium">
@@ -294,7 +300,7 @@
             </div>
 
             <div
-              class="bg-gray p-2 rounded-md lg:rounded-r-none flex flex-col gap-2"
+              class="custom-gray p-2 rounded-md lg:rounded-r-none flex flex-col gap-2"
             >
               <div class="flex items-center">
                 <div class="text-primary text-[20px] font-medium">
@@ -345,9 +351,11 @@
 
       <!-- nouvelles -->
       <div
-        class="p-4 w-full bg-gray-200 flex flex-col gap-6 items-center justify-center"
+        class="p-10 w-full custom-light-blue flex flex-col gap-6 items-center justify-center"
       >
-        <div class="text-primary text-2xl font-bold text-center mb-2 uppercase">
+        <div
+          class="text-primary text-2xl font-bold text-center mb-2 title-text"
+        >
           LE NOUVELLES
         </div>
         <div
@@ -366,7 +374,7 @@
               </div>
             </div>
             <div
-              class="bg-gray-200 p-4 flex flex-col items-center justify-center rounded-lg lg:rounded-bl-lg gap-2 w-[40%] lg:w-auto lg:h-[50%] shadow-lg cursor-pointer"
+              class="custom-gray-200 p-4 flex flex-col items-center justify-center rounded-lg lg:rounded-bl-lg gap-2 w-[40%] lg:w-auto lg:h-[50%] shadow-lg cursor-pointer"
             >
               <img src="./assets/svgs/video.svg" alt="" />
               <div class="text-black text-[20px] font-semibold uppercase">
@@ -387,9 +395,11 @@
 
       <!-- utiles -->
       <div
-        class="p-4 w-full flex flex-col gap-4 bg-white items-center justify-center"
+        class="p-10 w-full flex flex-col gap-4 bg-white items-center justify-center"
       >
-        <div class="text-primary text-2xl font-bold text-center mb-8 uppercase">
+        <div
+          class="text-primary text-2xl font-bold text-center mb-8 title-text"
+        >
           Liens Utiles
         </div>
 
@@ -492,7 +502,7 @@
 
       <!-- partnaires -->
       <div
-        class="p-4 w-full flex flex-col gap-4 bg-lightgray items-center justify-center"
+        class="p-10 w-full flex flex-col gap-4 bg-lightgray items-center justify-center"
       >
         <div
           class="text-primary text-2xl font-bold text-center lg:mb-8 uppercase"
