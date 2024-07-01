@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+
+      .scroll-container {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      .scroll-container::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Opera */
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>SERVICES EN LIGNE</title>
+  </head>
+  <body>
+    <!-- top component -->
+    <div
+      class="fixed z-10 w-full bg-white h-[150px] lg:h-[180px] top-0 flex flex-col justify-between"
+    >
+      <div
+        class="flex flex-col gap-6 md:flex-row item-center justify-between p-8 pt-3"
+      >
+        <img
+          src="./assets/logo.png"
+          alt=""
+          class="object-contain w-[250px] sm:w-[300px] md:w-[400px]"
+        />
+
+        <div class="flex items-center gap-6 justify-between flex-wrap">
+          <div
+            class="flex gap-3 rounded-2xl px-4 py-3 items-center"
+            style="
+              background: linear-gradient(
+                to right,
+                rgba(249, 199, 79, 1),
+                rgba(221, 161, 94, 1)
+              );
+            "
+          >
+            <a href="/">
+              <img src="./assets/svgs/youtube.svg" alt="" />
+            </a>
+            <a href="/">
+              <img src="./assets/svgs/linkedin.svg" alt="" />
+            </a>
+            <a href="/">
+              <img src="./assets/svgs/twitter.svg" alt="" />
+            </a>
+            <a href="/">
+              <img src="./assets/svgs/instagram.svg" alt="" />
+            </a>
+            <a href="/">
+              <img src="./assets/svgs/facebook-square.svg" alt="" />
+            </a>
+          </div>
+
+          <div
+            class="bg-white shadow-lg rounded-full h-[40px] w-[40px] flex items-center justify-center cursor-pointer"
+          >
+            <img src="./assets/search.png" alt="" />
+          </div>
+
+          <!-- hamburger -->
+          <span
+            class="material-symbols-outlined text-3xl text-secondary cursor-pointer md:flex lg:hidden"
+            id="menu_button"
+          >
+            menu
+          </span>
+        </div>
+      </div>
+
+      <!-- Nav -->
+      <nav
+        class="shadow-lg lg:flex px-28 py-4 text-white justify-center gap-20 text-lg items-center hidden"
+        style="background-color: rgba(3, 64, 120, 1)"
+      >
+        <a href="/" class="flex items-center gap-2"
+          >ANaTT
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+          </span></a
+        >
+        <a href="/prestations.html" class="flex items-center gap-2"
+          >Nos Prestations
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+          </span></a
+        >
+        <a href="/services.html">Services en Ligne</a>
+        <a href="/publications.html" class="flex items-center gap-2"
+          >Publications
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+          </span></a
+        >
+        <a href="/contact.html">Contact</a>
+      </nav>
+
+      <!-- responsive nav -->
+      <nav
+        class="w-full bg-primary text-white flex flex-col absolute -bottom-52 p-4 gap-4 shadow-lg lg:hidden"
+        id="menu_nav_container"
+      >
+        <a href="/" class="flex items-center gap-2"
+          >ANaTT
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+          </span></a
+        >
+        <a href="/prestations.html" class="flex items-center gap-2"
+          >Nos Prestations
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+          </span></a
+        >
+        <a href="/services.html">Services en Ligne</a>
+        <a href="/publications.html" class="flex items-center gap-2"
+          >Publications
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+          </span></a
+        >
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <div class="mt-[150px] lg:mt-[180px]">
+      <!-- SERVICES EN LIGNE bread crumb-->
+      <div class="flex flex-col items-center justify-center p-4">
+        <div class="text-primary text-[30px] font-medium">
+          SERVICES EN LIGNE
+        </div>
+        <div class="text-black font-medium text-lg">
+          Accueil /
+          <span
+            ><a href="/services.html" class="text-primary"
+              >Service en Ligne</a
+            ></span
+          >
+        </div>
+
+        <div
+          class="flex items-center justify-between pt-14 gap-8 flex-wrap w-full"
+        >
+          <div>
+            <select
+              name="filtre"
+              id=""
+              class="bg-semilightgray w-[150px] p-2 px-3 rounded-md"
+            >
+              <option value="">filtre</option>
+            </select>
+          </div>
+
+          <div class="w-[500px] flex">
+            <input
+              type="text"
+              placeholder="Saisissez votre recherche ici"
+              class="bg-lightgray p-2 rounded-l-md text-black focus:outline-none w-[85%] placeholder:text-gray"
+            />
+
+            <div
+              class="bg-primary w-[15%] p-2 flex items-center justify-center cursor-pointer"
+            >
+              <img src="./assets/svgs/search.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  SERVICES EN LIGNE items -->
+      <div class="flex gap-3 w-full p-4">
+        <div
+          class="grid lg:grid-cols-3 sm:grid-cols-2 w-[100%] gap-2 service_container"
+          id="service_container"
+        >
+          <!-- Service items will be dynamically inserted here -->
+        </div>
+      </div>
+
+      <!-- informes -->
+      <div
+        class="p-4 w-full flex lg:flex-row flex-col gap-10 bg-primary items-center justify-between"
+      >
+        <!-- left -->
+        <div class="w-full lg:w-[45%] text-white">
+          <div class="text-[24px] font-bold">RESTEZ INFORMÉS</div>
+
+          <div class="text-[17px]">
+            Abonnez-vous pour recevoir périodiquement l'actualité de l'Agence
+            Nationale des Transports Terrestres. Votre adresse de messagerie est
+            uniquement utilisée pour vous envoyer des informations relatives à
+            l'ANATT. Vous pouvez à tout moment vous
+            <span class="text-secondary">désabonner</span>
+          </div>
+        </div>
+
+        <!-- right -->
+        <div
+          class="w-full lg:w-[45%] flex flex-col justify-center items-center gap-4"
+        >
+          <div
+            class="flex md:flex-row flex-col gap-2 w-full items-center justify-center"
+          >
+            <input
+              type="text"
+              placeholder="Votre adresse mail"
+              class="h-[40px] w-full sm:w-[70%] md:w-[60%] bg-lightgray px-4 rounded-lg outline-none focus:outline-none"
+            />
+
+            <button
+              class="bg-secondary h-[40px] px-6 w-full sm:w-[70%] md:w-[30%] rounded-lg font-medium"
+            >
+              S’abonner
+            </button>
+          </div>
+
+          <div
+            class="flex gap-3 md:flex-row flex-col items-center justify-center"
+          >
+            <div class="text-white text-[17px]">Suivez-nous via nos médias</div>
+
+            <div
+              class="flex gap-3 rounded-2xl px-4 py-3 items-center"
+              style="
+                background: linear-gradient(
+                  to right,
+                  rgba(249, 199, 79, 1),
+                  rgba(221, 161, 94, 1)
+                );
+              "
+            >
+              <a href="/">
+                <img src="./assets/svgs/youtube.svg" alt="" />
+              </a>
+              <a href="/">
+                <img src="./assets/svgs/linkedin.svg" alt="" />
+              </a>
+              <a href="/">
+                <img src="./assets/svgs/twitter.svg" alt="" />
+              </a>
+              <a href="/">
+                <img src="./assets/svgs/instagram.svg" alt="" />
+              </a>
+              <a href="/">
+                <img src="./assets/svgs/facebook-square.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer
+        class="p-4 bg-white flex flex-col items-center justify-center gap-6"
+      >
+        <img src="./assets/logo.png" alt="" />
+
+        <div
+          class="flex sm:flex-row flex-col items-center justify-center gap-4 text-primary text-[14px]"
+        >
+          <a href="/">Marches Public</a>
+          <a href="/">Emplois</a>
+          <a href="/">Projets</a>
+          <a href="/">Partenaires</a>
+          <a href="/">Mention Legal</a>
+          <a href="/">FAQ</a>
+        </div>
+
+        <div> Agence Nationale des Transports Terrestres - 2024</div>
+      </footer>
+
+      <div class="w-full flex">
+        <div class="flex-[1] h-[10px] bg-green"></div>
+        <div class="flex-[1] h-[10px] bg-yellow"></div>
+        <div class="flex-[1] h-[10px] bg-red"></div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

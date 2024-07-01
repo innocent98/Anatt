@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "./assets/icon-holder1.png",
+    "title": "Attestation de succès à l’examen de permis de conduire",
+    "text": "A1 Lorsqu’un candidat définitivement admis aux examens de permis de conduire désire avoir une autorisation pour conduire un véhicule dès les heures qui suivent la proclamation des résultats, une attestation lui délivrée. Cette attestation est peut-être...",
+    "duration": "24h"
+  },
+  {
+    "id": 2,
+    "imageUrl": "./assets/icon-holder2.png",
+    "title": "Gravage des vitres d’un véhicule",
+    "text": "B2 Lorsqu’un candidat définitivement admis aux examens de permis de conduire désire avoir une autorisation pour conduire un véhicule dès les heures qui suivent la proclamation des résultats, une attestation lui délivrée. Cette attestation est peut-être...",
+    "duration": "24h"
+  },
+  {
+    "id": 3,
+    "imageUrl": "./assets/icon-holder3.png",
+    "title": "Autorisation vitres teintées",
+    "text": "C3 Lorsqu’un candidat définitivement admis aux examens de permis de conduire désire avoir une autorisation pour conduire un véhicule dès les heures qui suivent la proclamation des résultats, une attestation lui délivrée. Cette attestation est peut-être...",
+    "duration": "24h"
+  },
+  {
+    "id": 4,
+    "imageUrl": "./assets/icon-holder4.png",
+    "title": "Carte Garage de Type W",
+    "text": "D4 Lorsqu’un candidat définitivement admis aux examens de permis de conduire désire avoir une autorisation pour conduire un véhicule dès les heures qui suivent la proclamation des résultats, une attestation lui délivrée. Cette attestation est peut-être...",
+    "duration": "24h"
+  },
+  {
+    "id": 5,
+    "imageUrl": "./assets/icon-holder5.png",
+    "title": "Inscription à l’Examen du Permis de conduire",
+    "text": "E5 Lorsqu’un candidat définitivement admis aux examens de permis de conduire désire avoir une autorisation pour conduire un véhicule dès les heures qui suivent la proclamation des résultats, une attestation lui délivrée. Cette attestation est peut-être...",
+    "duration": "24h"
+  },
+  {
+    "id": 6,
+    "imageUrl": "./assets/icon-holder6.png",
+    "title": "Autorisation d’ouverture d’un Etablissement d’Enseignem...",
+    "text": "F6 Lorsqu’un candidat définitivement admis aux examens de permis de conduire désire avoir une autorisation pour conduire un véhicule dès les heures qui suivent la proclamation des résultats, une attestation lui délivrée. Cette attestation est peut-être...",
+    "duration": "24h"
+  }
+]

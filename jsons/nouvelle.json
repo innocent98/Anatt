@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "date": "07 Mai 2024",
+    "type": "Actualites",
+    "text": "Le Benin passe au registre électronique des entreprises de transport routier",
+    "img": "./assets/nouvelle1.png"
+  },
+  {
+    "id": "2",
+    "date": "07 Mai 2024",
+    "type": "Actualites",
+    "text": "Le Benin passe au registre électronique des entreprises de transport routier",
+    "img": "./assets/nouvelle2.png"
+  },
+  {
+    "id": "3",
+    "date": "07 Mai 2024",
+    "type": "Actualites",
+    "text": "Le Benin passe au registre électronique des entreprises de transport routier",
+    "img": "./assets/nouvelle3.png"
+  },
+  {
+    "id": "1",
+    "date": "07 Mai 2024",
+    "type": "Actualites",
+    "text": "Le Benin passe au registre électronique des entreprises de transport routier",
+    "img": "./assets/nouvelle1.png"
+  }
+]

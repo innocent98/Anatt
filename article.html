@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+
+      .scroll-container {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      .scroll-container::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Opera */
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- top component -->
+    <div
+      class="fixed z-10 w-full bg-white h-[150px] lg:h-[180px] top-0 flex flex-col justify-between"
+    >
+      <div
+        class="flex flex-col gap-6 md:flex-row item-center justify-between p-8 pt-3"
+      >
+        <img
+          src="./assets/logo.png"
+          alt=""
+          class="object-contain w-[250px] sm:w-[300px] md:w-[400px]"
+        />
+
+        <div class="flex items-center gap-6 justify-between flex-wrap">
+          <div
+            class="flex gap-3 rounded-2xl px-4 py-3 items-center"
+            style="
+              background: linear-gradient(
+                to right,
+                rgba(249, 199, 79, 1),
+                rgba(221, 161, 94, 1)
+              );
+            "
+          >
+            <a href="/">
+              <img src="./assets/svgs/youtube.svg" alt="" />
+            </a>
+            <a href="/">
+              <img src="./assets/svgs/linkedin.svg" alt="" />
+            </a>
+            <a href="/">
+              <img src="./assets/svgs/twitter.svg" alt="" />
+            </a>
+            <a href="/">
+              <img src="./assets/svgs/instagram.svg" alt="" />
+            </a>
+            <a href="/">
+              <img src="./assets/svgs/facebook-square.svg" alt="" />
+            </a>
+          </div>
+
+          <div
+            class="bg-white shadow-lg rounded-full h-[40px] w-[40px] flex items-center justify-center cursor-pointer"
+          >
+            <img src="./assets/search.png" alt="" />
+          </div>
+
+          <!-- hamburger -->
+          <span
+            class="material-symbols-outlined text-3xl text-secondary cursor-pointer md:flex lg:hidden"
+            id="menu_button"
+          >
+            menu
+          </span>
+        </div>
+      </div>
+
+      <!-- Nav -->
+      <nav
+        class="shadow-lg lg:flex px-28 py-4 text-white justify-center gap-20 text-lg items-center hidden"
+        style="background-color: rgba(3, 64, 120, 1)"
+      >
+        <a href="/" class="flex items-center gap-2"
+          >ANaTT
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+          </span></a
+        >
+        <a href="/prestations.html" class="flex items-center gap-2"
+          >Nos Prestations
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+          </span></a
+        >
+        <a href="/services.html">Services en Ligne</a>
+        <a href="/publications.html" class="flex items-center gap-2"
+          >Publications
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+          </span></a
+        >
+        <a href="/contact.html">Contact</a>
+      </nav>
+
+      <!-- responsive nav -->
+      <nav
+        class="w-full bg-primary text-white flex flex-col absolute -bottom-52 p-4 gap-4 shadow-lg lg:hidden"
+        id="menu_nav_container"
+      >
+        <a href="/" class="flex items-center gap-2"
+          >ANaTT
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+          </span></a
+        >
+        <a href="/prestations.html" class="flex items-center gap-2"
+          >Nos Prestations
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+          </span></a
+        >
+        <a href="/services.html">Services en Ligne</a>
+        <a href="/publications.html" class="flex items-center gap-2"
+          >Publications
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+          </span></a
+        >
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <div class="mt-[150px] lg:mt-[180px]">
+      <!-- bread crumb -->
+      <div class="flex items-center p-4 bg-white justify-between flex-wrap">
+        <div class="flex gap-2 items-center">
+          <span class="material-symbols-outlined text-primary">arrow_back</span>
+          <div class="text-primary text-[14px]">Retour aux articles</div>
+        </div>
+
+        <div class="flex gap-2 items-center justify-start">
+          <img src="./assets/svgs/folder.svg" alt="" />
+          <div class="text-[15px] font-medium">
+            Communiques | <span class="text-secondary">Transports</span>
+          </div>
+        </div>
+
+        <div class="text-[15px] font-medium">
+          Accueil / Publications /
+          <a href="/article.html" class="text-primary underline">Actualites</a>
+        </div>
+
+        <div class="font-medium text-[14px]">03.23.2024</div>
+      </div>
+
+      <!-- article detail -->
+      <div class="flex py-6 pb-10">
+        <!-- left -->
+        <div class="flex-[1] flex flex-col items-center justify-start gap-6 mt-[150px]">
+          <img src="./assets/svgs/facebook-colored.svg" alt="" />
+          <img src="./assets/svgs/youtube-colored.svg" alt="" />
+          <img src="./assets/svgs/linkedin-colored.svg" alt="" />
+          <img src="./assets/svgs/twitter-colored.svg" alt="" />
+          <img src="./assets/svgs/instagram-colored.svg" alt="" />
+        </div>
+
+        <!-- center -->
+        <div class="flex-[5] flex flex-col gap-2 items-center">
+          <div class="text-primary text-[30px] font-bold uppercase w-full md:w-[80%]">
+            Les réformes mises en œuvre dans tous les secteurs par le
+            Gouvernement du Bénin
+          </div>
+
+          <div class="text-secondary font-medium text-[16px] w-[80%]">
+            Les réformes mises en œuvre dans tous les secteurs par le
+            Gouvernement du Bénin pour faciliter la vie aux populations se
+            poursuivent. Dans le domaine des transports, le Bénin vient de
+            franchir un pas historique. Il s\'agit du permis de conduire qui
+            passe d\'un format à papier trois volets à un format biométrique
+            plus sécurisé et durable, assimilable à une carte bancaire.
+            L\'information a été rendue publique le vendredi 16 décembre 2022
+            par le Directeur Général par intérim de l\'ANaTT, Monsieur Alain
+            HINKATI et le gestionnaire mandataire de l\'ANIP Dr Cyrille
+            GOUGBEDJI lors d\'une conférence de presse animée au siège de
+            l\'ANaTT. 
+          </div>
+
+          <div class="w-full">
+            <img src="./assets/intro.png" alt="" class="rounded-lg" />
+          </div>
+
+          <div class="text-black font-normal text-[16px] w-[80%]">
+            Des explications, il ressort qu\'a compter du vendredi 16 décembre
+            2022, le Bénin passe à un format de permis de conduire Biométrique,
+            plus sécurisé et durable et la mise en service du nouveau format ne
+            génère aucun frais supplémentaire sur les tarifs habituels pratiqués
+            par l\'ANaTT en ce qui concernent l\'obtention du permis de
+            conduire, les renouvellements de cartes ou les duplicatas. Les
+            anciens tarifs restent en vigueur.   Sur ce qui change désormais au
+            niveau du nouveau format, les conférenciers précisent : « Désormais,
+            on ne peut pas avoir le permis de conduire biométrique  sans avoir
+            fourni son NPI. En plus des pièces administratives, un document
+            faisant état de résultats des tests de groupage sanguin doit être
+            fourni par l\'usager. Pour éviter que les paramètres se détériorent,
+            la carte de permis de conduire a désormais un délai de validité de
+            dix (10) ans ».  Pour les usagers qui détiennent les anciens formats
+            de permis, le Directeur Général par intérim de l\'ANaTT fait
+            remarquer que la mise en circulation du nouveau format de permis de
+            conduire ne signifie pas que les anciens permis ne sont plus
+            valables. Les anciens permis restent en vigueur et concèdent toute
+            leur validité. Une période de transition suffisamment longue sera
+            donnée pour permettre à tout le monde de pouvoir disposer des
+            nouveaux formats de permis de conduire avant que d’autres mesures
+            sur l’utilisation ou non des anciens permis de conduire soient
+            prises. Ils invitent les détenteurs de l\'ancien format à donc ne
+            pas se précipiter dans les guichets de l\'ANaTT pour demander le
+            nouveau format. 
+          </div>
+        </div>
+
+        <!-- right -->
+        <div class="flex-[2]"></div>
+      </div>
+
+      <!-- informes -->
+      <div
+        class="p-4 w-full flex lg:flex-row flex-col gap-10 bg-primary items-center justify-between"
+      >
+        <!-- left -->
+        <div class="w-full lg:w-[45%] text-white">
+          <div class="text-[24px] font-bold">RESTEZ INFORMÉS</div>
+
+          <div class="text-[17px]">
+            Abonnez-vous pour recevoir périodiquement l'actualité de l'Agence
+            Nationale des Transports Terrestres. Votre adresse de messagerie est
+            uniquement utilisée pour vous envoyer des informations relatives à
+            l'ANATT. Vous pouvez à tout moment vous
+            <span class="text-secondary">désabonner</span>
+          </div>
+        </div>
+
+        <!-- right -->
+        <div
+          class="w-full lg:w-[45%] flex flex-col justify-center items-center gap-4"
+        >
+          <div
+            class="flex md:flex-row flex-col gap-2 w-full items-center justify-center"
+          >
+            <input
+              type="text"
+              placeholder="Votre adresse mail"
+              class="h-[40px] w-full sm:w-[70%] md:w-[60%] bg-lightgray px-4 rounded-lg outline-none focus:outline-none"
+            />
+
+            <button
+              class="bg-secondary h-[40px] px-6 w-full sm:w-[70%] md:w-[30%] rounded-lg font-medium"
+            >
+              S’abonner
+            </button>
+          </div>
+
+          <div
+            class="flex gap-3 md:flex-row flex-col items-center justify-center"
+          >
+            <div class="text-white text-[17px]">Suivez-nous via nos médias</div>
+
+            <div
+              class="flex gap-3 rounded-2xl px-4 py-3 items-center"
+              style="
+                background: linear-gradient(
+                  to right,
+                  rgba(249, 199, 79, 1),
+                  rgba(221, 161, 94, 1)
+                );
+              "
+            >
+              <a href="/">
+                <img src="./assets/svgs/youtube.svg" alt="" />
+              </a>
+              <a href="/">
+                <img src="./assets/svgs/linkedin.svg" alt="" />
+              </a>
+              <a href="/">
+                <img src="./assets/svgs/twitter.svg" alt="" />
+              </a>
+              <a href="/">
+                <img src="./assets/svgs/instagram.svg" alt="" />
+              </a>
+              <a href="/">
+                <img src="./assets/svgs/facebook-square.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer
+        class="p-4 bg-white flex flex-col items-center justify-center gap-6"
+      >
+        <img src="./assets/logo.png" alt="" />
+
+        <div
+          class="flex sm:flex-row flex-col items-center justify-center gap-4 text-primary text-[14px]"
+        >
+          <a href="/">Marches Public</a>
+          <a href="/">Emplois</a>
+          <a href="/">Projets</a>
+          <a href="/">Partenaires</a>
+          <a href="/">Mention Legal</a>
+          <a href="/">FAQ</a>
+        </div>
+
+        <div> Agence Nationale des Transports Terrestres - 2024</div>
+      </footer>
+
+      <div class="w-full flex">
+        <div class="flex-[1] h-[10px] bg-green"></div>
+        <div class="flex-[1] h-[10px] bg-yellow"></div>
+        <div class="flex-[1] h-[10px] bg-red"></div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
