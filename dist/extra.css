@@ -21,6 +21,19 @@
 .custom-gray {
   background-color: #d9d9d9;
 }
+.dh6d {
+  background-color: #d9d9d9;
+}
+.dh6d:hover {
+  background-color: rgba(3, 64, 120, 1);
+  color: #ffffff;
+}
+.dh6d:hover h2 {
+  color: #fff !important;
+}
+.dh6d:hover .material-symbols-outlined {
+  color: #dda15e !important;
+}
 .custom-light-blue {
   background-color: #ebf0f6;
 }
@@ -35,8 +48,8 @@ footer > img {
   .menu-items {
     font-size: 20px !important;
   }
-  
-  .title-text{
+
+  .title-text {
     font-size: 28px !important;
   }
 }
