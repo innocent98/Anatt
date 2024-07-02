@@ -27,11 +27,11 @@
   </head>
   <body>
     <!-- top component -->
-    <div
-      class="fixed z-10 w-full bg-white h-[150px] lg:h-[180px] top-0 flex flex-col justify-between"
+    <section
+      class="fixed z-10 w-full bg-white h-[150px] sm:h-[165px] lg:h-[180px] top-0 flex flex-col justify-between"
     >
       <div
-        class="flex flex-col gap-6 md:flex-row item-center justify-between p-8 pt-3"
+        class="flex flex-col gap-6 md:flex-row item-center justify-between p-4 sm:p-8 pt-3"
       >
         <img
           src="./assets/logo.png"
@@ -143,11 +143,13 @@
         >
         <a href="/contact.html" class="uppercase menu-items">Contact</a>
       </nav>
-    </div>
+    </section>
 
-    <div class="mt-[150px] lg:mt-[180px] relative">
+    <section class="mt-[150px] lg:mt-[180px] relative">
       <!-- contact -->
-      <div class="flex flex-col items-center justify-center py-6">
+      <section
+        class="flex flex-col items-center justify-center py-6 p-4 sm:p-16 lg:p-10"
+      >
         <div class="text-primary text-[30px] font-medium title-text">
           CONTACTEZ-NOUS
         </div>
@@ -161,7 +163,9 @@
         </div>
 
         <div class="flex items-center justify-center py-14 gap-8 flex-wrap">
-          <div class="md:w-[40%] w-[70%] text-center md:text-left text-[18px]">
+          <div
+            class="md:w-[40%] w-full sm:w-[70%] text-center md:text-left text-[18px]"
+          >
             Pour toutes vos questions concernant les services de transport
             routier et terrestre, contactez-nous dans l'une de nos annexes
             ci-dessous.
@@ -188,10 +192,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- contact form pop up modal -->
-      <div
+      <section
         class="absolute top-10 w-[100%] h-auto hidden items-center justify-center"
         id="contact_modal"
       >
@@ -328,11 +332,11 @@
             </button>
           </form>
         </div>
-      </div>
+      </section>
 
       <!-- annexes -->
-      <div
-        class="p-10 w-full bg-white flex flex-col items-center justify-center py-8"
+      <section
+        class="p-4 sm:p-16 lg:p-10 w-full bg-white flex flex-col items-center justify-center py-8"
       >
         <div
           class="text-primary text-2xl font-bold text-center mb-2 title-text"
@@ -343,14 +347,14 @@
         <div
           class="flex w-full lg:flex-row flex-col gap-6 items-center justify-center"
         >
-          <div class="lg:w-[30%] md:w-[60%] w-[100%] flex flex-col gap-3">
+          <div
+            class="lg:w-[30%] md:w-[60%] w-[100%] flex flex-col gap-3 h-[360px] overflow-y-auto"
+          >
             <div
               class="dh6d p-2 rounded-md lg:rounded-r-none flex flex-col gap-2"
             >
               <div class="flex items-center">
-                <h2
-                  class="text-black font-semibold text-[20px] md:text-[23px]"
-                >
+                <h2 class="text-black font-semibold text-[20px] md:text-[23px]">
                   Nikki - Kalalé
                 </h2>
 
@@ -385,9 +389,7 @@
               class="dh6d p-2 rounded-md lg:rounded-r-none flex flex-col gap-2"
             >
               <div class="flex items-center">
-                <h2
-                  class="text-black font-semibold text-[20px] md:text-[23px]"
-                >
+                <h2 class="text-black font-semibold text-[20px] md:text-[23px]">
                   Ouidah - Kpomassè
                 </h2>
 
@@ -422,9 +424,7 @@
               class="dh6d p-2 rounded-md lg:rounded-r-none flex flex-col gap-2"
             >
               <div class="flex items-center">
-                <h2
-                  class="text-black font-semibold text-[20px] md:text-[23px]"
-                >
+                <h2 class="text-black font-semibold text-[20px] md:text-[23px]">
                   Dassa Zoume - Bohicon
                 </h2>
 
@@ -459,7 +459,7 @@
           <div class="lg:w-[70%] w-[100%]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d157995.1975505054!2d-74.012983!3d40.721725!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1719524336512!5m2!1sen!2sbd"
-              height="355"
+              height="360"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -468,17 +468,17 @@
             ></iframe>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- informes -->
-      <div
-        class="p-10 w-full flex lg:flex-row flex-col gap-10 bg-primary items-center justify-between"
+      <section
+        class="p-4 sm:p-16 lg:p-10 w-full flex lg:flex-row flex-col gap-10 bg-primary items-center justify-between"
       >
         <!-- left -->
         <div class="w-full lg:w-[45%] text-white flex flex-col gap-2">
           <div class="text-[24px] font-bold">RESTEZ INFORMÉS</div>
 
-          <div class="text-[15px]">
+          <div class="text-[16px]">
             Abonnez-vous pour recevoir périodiquement l'actualité de l'Agence
             Nationale des Transports Terrestres. Votre adresse de messagerie est
             uniquement utilisée pour vous envoyer des informations relatives à
@@ -540,11 +540,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- footer -->
       <footer
-        class="p-10 bg-white flex flex-col items-center justify-center gap-6"
+        class="p-4 lg:p-10 bg-white flex flex-col items-center justify-center gap-6"
       >
         <img src="./assets/logo.png" alt="" />
 
@@ -562,12 +562,12 @@
         <div> Agence Nationale des Transports Terrestres - 2024</div>
       </footer>
 
-      <div class="w-full flex">
+      <section class="w-full flex">
         <div class="flex-[1] h-[10px] bg-green"></div>
         <div class="flex-[1] h-[10px] bg-yellow"></div>
         <div class="flex-[1] h-[10px] bg-red"></div>
-      </div>
-    </div>
+      </section>
+    </section>
 
     <script src="./script.js"></script>
   </body>

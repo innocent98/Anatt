@@ -27,11 +27,11 @@
   </head>
   <body class="">
     <!-- top component -->
-    <div
-      class="fixed z-10 w-full bg-white h-[150px] lg:h-[180px] top-0 flex flex-col justify-between"
+    <section
+      class="fixed z-10 w-full bg-white h-[150px] sm:h-[165px] lg:h-[180px] top-0 flex flex-col justify-between"
     >
       <div
-        class="flex flex-col gap-6 md:flex-row item-center justify-between p-8 pt-3"
+        class="flex flex-col gap-6 md:flex-row item-center justify-between p-4 sm:p-8 pt-3"
       >
         <img
           src="./assets/logo.png"
@@ -143,11 +143,11 @@
         >
         <a href="/contact.html" class="uppercase menu-items">Contact</a>
       </nav>
-    </div>
+    </section>
 
-    <div class="mt-[150px] lg:mt-[180px]">
+    <section class="mt-[150px] lg:mt-[180px] w-full">
       <!-- intro -->
-      <div
+      <section
         class="carousel overflow-hidden relative max-w-full h-[500px] bg-primary"
       >
         <div class="carousel__track-container w-full overflow-hidden">
@@ -155,11 +155,11 @@
             <!-- Slides will be dynamically inserted here -->
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- services -->
-      <div
-        class="p-10 w-full flex flex-col custom-gray items-center justify-center"
+      <section
+        class="p-4 lg:p-10 w-full flex flex-col custom-gray items-center justify-center"
       >
         <div class="text-primary text-2xl font-bold text-center title-text">
           Services en Lignes
@@ -223,11 +223,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- corridor -->
-      <div
-        class="p-10 w-full bg-white flex flex-col items-center justify-center py-8"
+      <section
+        class="p-4 sm:px-16 lg:p-10 w-full bg-white flex flex-col items-center justify-center py-8"
       >
         <div
           class="text-primary text-2xl font-bold text-center mb-2 title-text"
@@ -238,7 +238,9 @@
         <div
           class="flex w-full lg:flex-row flex-col gap-6 items-center justify-center"
         >
-          <div class="lg:w-[30%] md:w-[60%] w-[100%] flex flex-col gap-3">
+          <div
+            class="lg:w-[30%] md:w-[60%] w-[100%] flex flex-col gap-3 h-[360px] overflow-y-auto"
+          >
             <div
               class="dh6d p-2 rounded-md lg:rounded-r-none flex flex-col gap-2"
             >
@@ -348,7 +350,7 @@
           <div class="lg:w-[70%] w-[100%]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d157995.1975505054!2d-74.012983!3d40.721725!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1719524336512!5m2!1sen!2sbd"
-              height="355"
+              height="360"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -357,11 +359,11 @@
             ></iframe>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- nouvelles -->
-      <div
-        class="p-10 w-full custom-light-blue flex flex-col gap-6 items-center justify-center"
+      <section
+        class="p-4 sm:p-16 lg:p-10 w-full custom-light-blue flex flex-col gap-6 items-center justify-center"
       >
         <div
           class="text-primary text-2xl font-bold text-center mb-2 title-text"
@@ -376,18 +378,22 @@
             class="flex lg:flex-col w-full justify-center lg:w-[300px] h-[120px] lg:h-[350px]"
           >
             <div
-              class="bg-secondary p-4 flex flex-col items-center justify-center rounded-lg lg:rounded-tl-lg gap-2 w-[40%] lg:w-auto lg:h-[50%] shadow-2xl cursor-pointer"
+              class="bg-secondary p-4 flex flex-col items-center justify-center rounded-lg lg:rounded-tl-lg gap-2 w-[50%] sm:w-[40%] lg:w-auto lg:h-[50%] shadow-2xl cursor-pointer"
             >
               <img src="./assets/svgs/newspaper.svg" alt="" />
-              <div class="text-white text-[25px] font-semibold uppercase">
+              <div
+                class="text-white text-[18px] sm:text-[25px] font-semibold uppercase"
+              >
                 Actualites
               </div>
             </div>
             <div
-              class="custom-gray-200 p-4 flex flex-col items-center justify-center rounded-lg lg:rounded-bl-lg gap-2 w-[40%] lg:w-auto lg:h-[50%] shadow-2xl cursor-pointer"
+              class="custom-gray-200 p-4 flex flex-col items-center justify-center rounded-lg lg:rounded-bl-lg gap-2 w-[50%] sm:w-[40%] lg:w-auto lg:h-[50%] shadow-2xl cursor-pointer"
             >
               <img src="./assets/svgs/video.svg" alt="" />
-              <div class="text-black text-[25px] font-semibold uppercase">
+              <div
+                class="text-black text-[18px] sm:text-[25px] font-semibold uppercase"
+              >
                 Videos
               </div>
             </div>
@@ -401,11 +407,11 @@
             <!-- nouvelles will be dynamically inserted here -->
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- utiles -->
-      <div
-        class="p-10 w-full flex flex-col gap-4 bg-white items-center justify-center"
+      <section
+        class="p-4 sm:p-16 lg:p-10 w-full flex flex-col gap-4 bg-white items-center justify-center"
       >
         <div
           class="text-primary text-2xl font-bold text-center mb-8 title-text"
@@ -508,11 +514,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- partnaires -->
-      <div
-        class="p-10 w-full flex flex-col gap-4 bg-lightgray items-center justify-center"
+      <section
+        class="p-4 sm:p-10 w-full flex flex-col gap-4 bg-lightgray items-center justify-center"
       >
         <div
           class="text-primary text-2xl font-bold text-center lg:mb-8 uppercase title-text"
@@ -529,11 +535,11 @@
             <img src="/assets/Partner 1.png" alt="" class="object-contain" />
           </a>
         </div>
-      </div>
+      </section>
 
       <!-- informes -->
-      <div
-        class="p-10 w-full flex lg:flex-row flex-col gap-10 bg-primary items-center justify-between"
+      <section
+        class="p-4 sm:p-16 lg:p-10 w-full flex lg:flex-row flex-col gap-10 bg-primary items-center justify-between"
       >
         <!-- left -->
         <div class="w-full lg:w-[45%] text-white flex flex-col gap-2">
@@ -601,11 +607,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- footer -->
       <footer
-        class="p-10 bg-white flex flex-col items-center justify-center gap-6"
+        class="p-4 lg:p-10 bg-white flex flex-col items-center justify-center gap-6"
       >
         <img src="./assets/logo.png" alt="" />
 
@@ -623,12 +629,12 @@
         <div> Agence Nationale des Transports Terrestres - 2024</div>
       </footer>
 
-      <div class="w-full flex">
+      <section class="w-full flex">
         <div class="flex-[1] h-[10px] bg-green"></div>
         <div class="flex-[1] h-[10px] bg-yellow"></div>
         <div class="flex-[1] h-[10px] bg-red"></div>
-      </div>
-    </div>
+      </section>
+    </section>
 
     <script src="./script.js"></script>
   </body>

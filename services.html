@@ -27,11 +27,11 @@
   </head>
   <body>
     <!-- top component -->
-    <div
-      class="fixed z-10 w-full bg-white h-[150px] lg:h-[180px] top-0 flex flex-col justify-between"
+    <section
+      class="fixed z-10 w-full bg-white h-[150px] sm:h-[165px] lg:h-[180px] top-0 flex flex-col justify-between"
     >
       <div
-        class="flex flex-col gap-6 md:flex-row item-center justify-between p-8 pt-3"
+        class="flex flex-col gap-6 md:flex-row item-center justify-between p-4 sm:p-8 pt-3"
       >
         <img
           src="./assets/logo.png"
@@ -143,11 +143,11 @@
         >
         <a href="/contact.html" class="uppercase menu-items">Contact</a>
       </nav>
-    </div>
+    </section>
 
-    <div class="mt-[150px] lg:mt-[180px]">
+    <section class="mt-[150px] lg:mt-[180px]">
       <!-- SERVICES EN LIGNE bread crumb-->
-      <div class="flex flex-col items-center justify-center p-4">
+      <section class="flex flex-col items-center justify-center p-4 lg:p10 sm:p-16">
         <div class="text-primary text-[30px] font-medium title-text">
           SERVICES EN LIGNE
         </div>
@@ -187,27 +187,27 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!--  SERVICES EN LIGNE items -->
-      <div class="flex gap-3 w-full p-4 mt-6">
+      <section class="flex gap-3 w-full p-4 lg:p-10 sm:p-16 mt-6">
         <div
           class="grid lg:grid-cols-3 sm:grid-cols-2 w-[100%] gap-8 service_container"
           id="service_container"
         >
           <!-- Service items will be dynamically inserted here -->
         </div>
-      </div>
+      </section>
 
       <!-- informes -->
-      <div
-        class="p-4 w-full flex lg:flex-row flex-col gap-10 bg-primary items-center justify-between"
+      <section
+        class="p-4 sm:p-16 lg:p-10 w-full flex lg:flex-row flex-col gap-10 bg-primary items-center justify-between"
       >
         <!-- left -->
         <div class="w-full lg:w-[45%] text-white flex flex-col gap-2">
           <div class="text-[24px] font-bold">RESTEZ INFORMÉS</div>
 
-          <div class="text-[15px]">
+          <div class="text-[16px]">
             Abonnez-vous pour recevoir périodiquement l'actualité de l'Agence
             Nationale des Transports Terrestres. Votre adresse de messagerie est
             uniquement utilisée pour vous envoyer des informations relatives à
@@ -269,11 +269,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- footer -->
       <footer
-        class="p-4 bg-white flex flex-col items-center justify-center gap-6"
+        class="p-4 lg:p-10 bg-white flex flex-col items-center justify-center gap-6"
       >
         <img src="./assets/logo.png" alt="" />
 
@@ -291,12 +291,12 @@
         <div> Agence Nationale des Transports Terrestres - 2024</div>
       </footer>
 
-      <div class="w-full flex">
+      <section class="w-full flex">
         <div class="flex-[1] h-[10px] bg-green"></div>
         <div class="flex-[1] h-[10px] bg-yellow"></div>
         <div class="flex-[1] h-[10px] bg-red"></div>
-      </div>
-    </div>
+      </section>
+    </section>
 
     <script src="./script.js"></script>
   </body>

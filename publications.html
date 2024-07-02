@@ -27,11 +27,11 @@
   </head>
   <body>
     <!-- top component -->
-    <div
-      class="fixed z-10 w-full bg-white h-[150px] lg:h-[180px] top-0 flex flex-col justify-between"
+    <section
+      class="fixed z-10 w-full bg-white h-[150px] sm:h-[165px] lg:h-[180px] top-0 flex flex-col justify-between"
     >
       <div
-        class="flex flex-col gap-6 md:flex-row item-center justify-between p-8 pt-3"
+        class="flex flex-col gap-6 md:flex-row item-center justify-between p-4 sm:p-8 pt-3"
       >
         <img
           src="./assets/logo.png"
@@ -143,11 +143,13 @@
         >
         <a href="/contact.html" class="uppercase menu-items">Contact</a>
       </nav>
-    </div>
+    </section>
 
-    <div class="mt-[150px] lg:mt-[180px]">
+    <section class="mt-[150px] lg:mt-[180px] w-full">
       <!-- PUBLICATIONS bread crumb-->
-      <div class="flex flex-col items-center justify-center p-4 gap-4">
+      <section
+        class="flex flex-col items-center justify-center p-4 sm:p-16 lg:p-10 gap-4"
+      >
         <div class="text-primary text-[30px] font-medium title-text">
           PUBLICATIONS
         </div>
@@ -208,32 +210,34 @@
           </div>
         </div>
 
-        <div class="flex gap-4 w-full">
+        <div class="flex gap-4 w-full flex-wrap">
           <div
-            class="rounded-3xl bg-primary text-secondary font-bold px-4 py-2 cursor-pointer"
+            class="rounded-3xl bg-primary text-secondary ease-in duration-300 font-bold px-4 py-2 cursor-pointer"
           >
             Tout
           </div>
           <div
-            class="rounded-3xl bg-lightgray hover:bg-primary hover:text-white px-4 py-2 cursor-pointer"
+            class="rounded-3xl bg-lightgray hover:bg-primary ease-in duration-300 hover:text-white px-4 py-2 cursor-pointer"
           >
             Actualités
           </div>
           <div
-            class="rounded-3xl bg-lightgray hover:bg-primary hover:text-white px-4 py-2 cursor-pointer"
+            class="rounded-3xl bg-lightgray hover:bg-primary ease-in duration-300 hover:text-white px-4 py-2 cursor-pointer"
           >
             Communiques
           </div>
           <div
-            class="rounded-3xl bg-lightgray hover:bg-primary hover:text-white px-4 py-2 cursor-pointer"
+            class="rounded-3xl bg-lightgray hover:bg-primary ease-in duration-300 hover:text-white px-4 py-2 cursor-pointer"
           >
             Rapports
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Publications item -->
-      <div class="flex p-4 gap-10 justify-center md:justify-between flex-wrap">
+      <section
+        class="flex p-4 sm:p-16 lg:p-10 gap-10 justify-center md:justify-between flex-wrap"
+      >
         <div class="w-[380px] h-[380px] rounded-lg border-primary border-2">
           <a href="/article.html">
             <div class="h-[65%] flex items-center justify-center">
@@ -407,17 +411,17 @@
             </div>
           </a>
         </div>
-      </div>
+      </section>
 
       <!-- informes -->
-      <div
-        class="p-4 w-full flex lg:flex-row flex-col gap-10 bg-primary items-center justify-between"
+      <section
+        class="p-4 sm:p-16 lg:p-10 w-full flex lg:flex-row flex-col gap-10 bg-primary items-center justify-between"
       >
         <!-- left -->
         <div class="w-full lg:w-[45%] text-white flex flex-col gap-2">
           <div class="text-[24px] font-bold">RESTEZ INFORMÉS</div>
 
-          <div class="text-[15px]">
+          <div class="text-[16px]">
             Abonnez-vous pour recevoir périodiquement l'actualité de l'Agence
             Nationale des Transports Terrestres. Votre adresse de messagerie est
             uniquement utilisée pour vous envoyer des informations relatives à
@@ -479,11 +483,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- footer -->
       <footer
-        class="p-4 bg-white flex flex-col items-center justify-center gap-6"
+        class="p-4 lg:p-10 bg-white flex flex-col items-center justify-center gap-6"
       >
         <img src="./assets/logo.png" alt="" />
 
@@ -501,12 +505,12 @@
         <div> Agence Nationale des Transports Terrestres - 2024</div>
       </footer>
 
-      <div class="w-full flex">
+      <section class="w-full flex">
         <div class="flex-[1] h-[10px] bg-green"></div>
         <div class="flex-[1] h-[10px] bg-yellow"></div>
         <div class="flex-[1] h-[10px] bg-red"></div>
-      </div>
-    </div>
+      </section>
+    </section>
 
     <script src="./script.js"></script>
   </body>

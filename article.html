@@ -23,15 +23,15 @@
       }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <title>Article</title>
   </head>
   <body>
     <!-- top component -->
-    <div
-      class="fixed z-10 w-full bg-white h-[150px] lg:h-[180px] top-0 flex flex-col justify-between"
+    <section
+      class="fixed z-10 w-full bg-white h-[150px] sm:h-[165px] lg:h-[180px] top-0 flex flex-col justify-between"
     >
       <div
-        class="flex flex-col gap-6 md:flex-row item-center justify-between p-8 pt-3"
+        class="flex flex-col gap-6 md:flex-row item-center justify-between p-4 sm:p-8 pt-3"
       >
         <img
           src="./assets/logo.png"
@@ -143,11 +143,13 @@
         >
         <a href="/contact.html" class="uppercase menu-items">Contact</a>
       </nav>
-    </div>
+    </section>
 
-    <div class="mt-[150px] lg:mt-[180px]">
+    <section class="mt-[150px] lg:mt-[180px] w-full">
       <!-- bread crumb -->
-      <div class="flex items-center p-4 bg-white justify-between flex-wrap">
+      <section
+        class="flex items-center p-4 sm:p-16 lg:p-10 bg-white justify-between flex-wrap"
+      >
         <div class="flex gap-2 items-center">
           <span class="material-symbols-outlined text-primary">arrow_back</span>
           <div class="text-primary text-[14px] font-semibold">
@@ -168,23 +170,25 @@
         </div>
 
         <div class="font-semibold text-[18px]">03.23.2024</div>
-      </div>
+      </section>
 
       <!-- article detail -->
-      <div class="flex py-6 pb-10 p-4 gap-5 lg:flex-row flex-col">
+      <section
+        class="flex py-6 pb-10 p-4 sm:p-16 lg:p-10 gap-5 lg:flex-row flex-col"
+      >
         <!-- left -->
-        <div
-          class="flex-[0.5] flex lg:flex-col flex-row items-center justify-start gap-6 lg:mt-[150px]"
+        <section
+          class="flex-[0.3] flex lg:flex-col flex-row items-center justify-start gap-6 lg:mt-[150px]"
         >
           <img src="./assets/svgs/facebook-colored.svg" alt="" />
           <img src="./assets/svgs/youtube-colored.svg" alt="" />
           <img src="./assets/svgs/linkedin-colored.svg" alt="" />
           <img src="./assets/svgs/twitter-colored.svg" alt="" />
           <img src="./assets/svgs/instagram-colored.svg" alt="" />
-        </div>
+        </section>
 
         <!-- center -->
-        <div class="flex-[6] flex flex-col gap-6 items-center">
+        <section class="flex-[6] flex flex-col gap-6 items-center">
           <div
             class="text-primary text-[30px] font-bold uppercase w-full md:w-[80%] title-text"
           >
@@ -239,10 +243,10 @@
             pas se précipiter dans les guichets de l\'ANaTT pour demander le
             nouveau format. 
           </div>
-        </div>
+        </section>
 
         <!-- right -->
-        <div class="flex-[3]">
+        <section class="flex-[3]">
           <div
             class="bg-lightgray shadow-lg p-3 flex flex-col items-center justify-center gap-2 rounded-xl"
           >
@@ -319,18 +323,18 @@
               Voir plus
             </button>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
 
       <!-- informes -->
-      <div
-        class="p-4 w-full flex lg:flex-row flex-col gap-10 bg-primary items-center justify-between"
+      <section
+        class="p-4 sm:p-16 lg:p-10 w-full flex lg:flex-row flex-col gap-10 bg-primary items-center justify-between"
       >
         <!-- left -->
         <div class="w-full lg:w-[45%] text-white flex flex-col gap-2">
           <div class="text-[24px] font-bold">RESTEZ INFORMÉS</div>
 
-          <div class="text-[15px]">
+          <div class="text-[16px]">
             Abonnez-vous pour recevoir périodiquement l'actualité de l'Agence
             Nationale des Transports Terrestres. Votre adresse de messagerie est
             uniquement utilisée pour vous envoyer des informations relatives à
@@ -392,11 +396,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- footer -->
       <footer
-        class="p-4 bg-white flex flex-col items-center justify-center gap-6"
+        class="p-4 lg:p-10 bg-white flex flex-col items-center justify-center gap-6"
       >
         <img src="./assets/logo.png" alt="" />
 
@@ -414,12 +418,12 @@
         <div> Agence Nationale des Transports Terrestres - 2024</div>
       </footer>
 
-      <div class="w-full flex">
+      <section class="w-full flex">
         <div class="flex-[1] h-[10px] bg-green"></div>
         <div class="flex-[1] h-[10px] bg-yellow"></div>
         <div class="flex-[1] h-[10px] bg-red"></div>
-      </div>
-    </div>
+      </section>
+    </section>
 
     <script src="./script.js"></script>
   </body>
