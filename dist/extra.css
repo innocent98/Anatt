@@ -10,9 +10,19 @@ body {
   color: #ffffff !important;
   transition: all 0.3s ease-in;
 }
+
 .menu-items:hover {
   color: #dda15e !important;
 }
+
+.anatt-drop {
+  transition: all 0.3s ease-in;
+  display: none;
+}
+.anatt:hover .anatt-drop {
+  display: flex;
+}
+
 .title-text {
   font-style: normal !important;
   font-weight: 700 !important;
@@ -21,6 +31,7 @@ body {
   text-transform: uppercase !important;
   padding: 20px 0;
 }
+
 .custom-gray {
   background-color: #d9d9d9;
 }
@@ -44,12 +55,21 @@ body {
 .dh6d:hover .material-symbols-outlined {
   color: #dda15e !important;
 }
+
 .custom-light-blue {
   background-color: #ebf0f6;
 }
 .navbar {
   background-color: rgba(3, 64, 120, 1);
 }
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
 footer > img {
   height: 59px;
 }
