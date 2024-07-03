@@ -1,6 +1,7 @@
-body {
-  font-size: 2vw; /* 2% of the viewport width */
-}
+/* body {
+  // 2% of the viewport width
+  font-size: 2vw;
+} */
 .menu-items {
   font-style: normal !important;
   font-weight: 700 !important;
