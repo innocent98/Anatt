@@ -23,7 +23,7 @@
       }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Emplois</title>
+    <title>En Ligne</title>
   </head>
   <body>
     <!-- top component -->
@@ -610,243 +610,163 @@
     </section>
 
     <section class="mt-[150px] lg:mt-[180px] w-full">
-      <!-- PUBLICATIONS bread crumb-->
+      <!-- bread crumb -->
       <section
-        class="flex flex-col items-center justify-center p-4 sm:p-16 lg:p-10 gap-4"
+        class="flex items-start p-4 sm:p-16 lg:p-10 bg-primary text-white flex-col h-[250px] sm:h-[300px] lg:h-[250px] rounded-b-[40px]"
       >
-        <div class="text-primary text-[30px] font-medium title-text">
-          Emplois
-        </div>
-        <div class="text-black font-semibold text-lg">
-          Accueil /
-          <span><a href="/services.html" class="text-primary">Emplois</a></span>
-        </div>
-
-        <div
-          class="flex items-center justify-between pt-14 gap-8 flex-wrap w-full"
-        >
-          <div>
-            <select
-              name="filtre"
-              id=""
-              class="custom-gray w-[150px] p-2 px-3 rounded-md"
-            >
-              <option value="">filtre</option>
-            </select>
-          </div>
-
-          <div class="w-[800px] flex">
-            <input
-              type="text"
-              placeholder="Saisissez votre recherche ici"
-              class="custom-gray p-2 rounded-l-md text-black focus:outline-none w-[85%] placeholder:text-gray"
-            />
-
-            <div
-              class="bg-primary w-[15%] p-2 flex items-center justify-center cursor-pointer"
-            >
-              <img src="./assets/svgs/search.svg" alt="" />
+        <div class="flex items-center w-full justify-between flex-wrap">
+          <div class="flex gap-2 items-center">
+            <span class="material-symbols-outlined text-white">arrow_back</span>
+            <div class="text-white text-[14px] font-semibold">
+              Retour aux articles
             </div>
           </div>
 
-          <div class="flex items-center gap-4 mt-2">
-            <div
-              class="border-secondary flex items-center justify-center h-10 w-10 border rounded-full cursor-pointer"
+          <div class="text-[18px] font-semibold">
+            Accueil / Services en Ligne/ Inscription a l’examen du permis de
+            conduire
+            <a href="/enligne.html" class="text-primary underline"
+              >Actualites</a
             >
-              <span class="material-symbols-outlined text-primary"
-                >arrow_back</span
-              >
-            </div>
+          </div>
 
-            <div class="text-[20px] font-semibold">1-5 sur 20</div>
-
-            <div
-              class="border-secondary flex items-center justify-center h-10 w-10 border rounded-full cursor-pointer"
-            >
-              <span class="material-symbols-outlined text-primary"
-                >arrow_forward</span
-              >
-            </div>
+          <div class="flex items-center gap-2">
+            <img src="./assets/svgs/facebook-square.svg" alt="" />
+            <img src="./assets/svgs/youtube.svg" alt="" />
+            <img src="./assets/svgs/linkedin.svg" alt="" />
+            <img src="./assets/svgs/twitter.svg" alt="" />
+            <img src="./assets/svgs/instagram.svg" alt="" />
           </div>
         </div>
 
-        <div class="flex gap-4 w-full">
-          <div
-            class="rounded-3xl bg-primary px-4 py-2 cursor-pointer font-semibold text-[18px] text-white"
-          >
-            Emplois
-          </div>
-          <div
-            class="rounded-3xl bg-lightgray px-4 py-2 cursor-pointer font-semibold text-[18px] text-primary"
-          >
-            Projets
-          </div>
+        <div class="title-text">
+          Inscription à l’Examen du Permis de conduire
         </div>
       </section>
 
-      <!-- contrats -->
-      <section
-        class="flex flex-col items-center justify-center p-4 sm:p-16 lg:p-10 gap-2"
-      >
-        <!-- title -->
-        <div class="flex flex-col gap-4 md:flex-row w-full items-center p-3">
-          <!-- left -->
-          <div class="flex-[4] text-[18px] font-semibold">
-            Role | Type contrats
+      <!-- detail -->
+      <section class="flex flex-wrap p-4 sm:p-16 lg:p-10 gap-8">
+        <!-- left -->
+        <div class="flex-[2] lg:-mt-[120px] flex flex-col gap-4">
+          <img
+            src="./assets/omotayo-tajudeen.png"
+            alt=""
+            class="w-full rounded-lg"
+          />
+
+          <div class="text-[18px] font-semibold text-secondary">
+            Il s’agit d’un service qui permet à tout établissement
+            d’enseignement à la conduite automobile (auto-école) d’inscrire un
+            candidat apte pour un examen en vue de l’obtention du permis de
+            conduire. Toutefois, il faut être âgé de seize (16) ans au moins
+            pour la catégorie A1 ; dix-huit (18) ans au moins pour les
+            catégories (A2 ; B ; F) et vingt-et-un (21) ans pour les catégories
+            A3, C, C1, Dr, D et E.
           </div>
 
-          <!-- center -->
-          <div class="flex-[1] text-[18px] font-semibold">Date Limite</div>
+          <div class="text-[18px] font-semibold text-primary">
+            Coût de service:
+          </div>
 
-          <!-- right -->
-          <div class="flex-[1] flex justify-center items-center">
-            <img src="./assets/svgs/ellipsis.svg" alt="" />
+          <ul class="list-disc px-10">
+            <li>Nationaux : Vingt mille deux cent (20 200) francs CFA ;</li>
+            <li>Candidat FAB : Quatre Mille Sept Cent (4 700) FCFA</li>
+            <li>Etrangers : Quarante Mille Deux Cents (40 200) FCFA</li>
+            <li>
+              Droit Trésor Public : Varie selon la catégorie du permis de
+              conduire sollicitée par le candidat :
+            </li>
+            <li>Catégorie A1 mille (1 000) francs CFA</li>
+            <li>Catégorie A2, A3, B ou F trois mille (3 000) francs CFA</li>
+            <li>Catégorie C quatre mille (4 000) francs CFA</li>
+            <li>Catégorie C1 six mille (6 000) francs CFA</li>
+            <li>Catégorie Dr ou D quatre mille (4 000) francs CFA</li>
+            <li>
+              Catégorie E quatre mille (4 000) francs CFA Droit Impôt : Timbre
+              Fiscal : Valeur 2000 FCFA
+            </li>
+          </ul>
+
+          <div class="text-[18px] font-semibold text-primary">
+            Qui peut faire la demande?
+          </div>
+
+          <div class="text-[18px] font-light">
+            Tout établissement d’enseignement à la conduite automobile
+          </div>
+
+          <div class="text-[18px] font-semibold text-primary">
+            Institution en charge du service:
+          </div>
+
+          <div class="text-[18px] font-light">
+            Ministère du Cadre de Vie et des Transports, en charge du
+            Développement Durable
+          </div>
+
+          <div class="text-[18px] font-semibold text-primary">
+            Institution compétente:
+          </div>
+
+          <div class="text-[18px] font-light">
+            Agence Nationale des Transports Terrestres
+          </div>
+
+          <div class="text-[18px] font-semibold text-primary">
+            Localisation, heures de service:
+          </div>
+
+          <div class="text-[18px] font-light">
+            ANaTT, Rue 108, Avenue Steinmetz, TOKPA HOHO, Lot 35 B Immeuble
+            KOUGBLENOU
+          </div>
+
+          <div class="text-[18px] font-light">
+            Téléphone: (+229) 91 85 11 11
+          </div>
+
+          <div class="text-[18px] font-light">
+            E-mail: anatt.contact@gouv.bj - https://service-public.bj 
+          </div>
+
+          <div class="text-[18px] font-light">Adresse: 01 BP 1230 Cotonou,</div>
+
+          <div class="text-[18px] font-light">
+            Tous les jours ouvrés Matinée : 8H à 12H30 Soirée : 14H à 17H30
           </div>
         </div>
 
-        <!-- cards -->
-        <div class="flex flex-col gap-4">
-          <div
-            class="flex flex-col md:flex-row w-full items-center gap-4 md:gap-16 bg-[#DEE9F4] p-3 rounded-lg"
-          >
-            <!-- left -->
-            <div class="flex-[4] text-[18px] font-normal">
+        <!-- right -->
+        <div class="flex-[1] flex flex-col gap-40">
+          <div class="bg-lightgray shadow-xl rounded-2xl">
+            <div
+              class="bg-primary text-center p-2 text-[23px] font-semibold text-white rounded-t-xl"
+            >
+              Détail supplémentaires
+            </div>
+
+            <div class="p-8 flex items-start gap-4">
+              <img src="./assets/svgs/link.svg" alt="" />
+
               <div>
-                Recrutement multipostes pour le compte de la Société Immobilière
-                et d’Aménagement Urbain (SImAU)
+                Lien:
+                design/9jTrb5FjmiDzKQHdx7opZL/Anatt-Template?node-id=44-1062&t=zHHctbrwweLir7we-0
               </div>
-
-              <div class="text-[14px] uppercase">
-                Type de contrat:
-                <span class="font-semibold text-green">CDD</span>
-              </div>
-
-              <div class="text-[14px] uppercase">
-                Date de publication:
-                <span class="font-semibold capitalize">05 Mai 2024</span>
-              </div>
-            </div>
-
-            <!-- center -->
-            <div class="flex-[1] text-[18px] font-semibold text-[red]">
-              05 Jun 2024 à 00:00
-            </div>
-
-            <!-- right -->
-            <div class="flex-[1] flex justify-center items-center">
-              <button
-                class="w-full md:w-[80%] bg-secondary p-2 text-white rounded-lg font-bold text-[20px]"
-              >
-                En savoir plus
-              </button>
             </div>
           </div>
 
-          <div
-            class="flex flex-col md:flex-row w-full items-center gap-4 md:gap-16 bg-transparent border border-[#DEE9F4] p-3 rounded-lg"
-          >
-            <!-- left -->
-            <div class="flex-[4] text-[18px] font-normal">
-              <div>
-                Avis de recrutement d'un Conducteur de véhicules au profit de la
-                SBIR S.A.
-              </div>
-
-              <div class="text-[14px] uppercase">
-                Type de contrat:
-                <span class="font-semibold text-green">CDD</span>
-              </div>
-
-              <div class="text-[14px] uppercase">
-                Date de publication:
-                <span class="font-semibold capitalize">05 Mai 2024</span>
-              </div>
+          <div class="bg-lightgray shadow-xl rounded-2xl">
+            <div
+              class="bg-primary text-center p-2 text-[23px] font-semibold text-white rounded-t-xl"
+            >
+              AUTRES E-SERVICES
             </div>
 
-            <!-- center -->
-            <div class="flex-[1] text-[18px] font-semibold text-[red]">
-              05 Jun 2024 à 00:00
-            </div>
-
-            <!-- right -->
-            <div class="flex-[1] flex justify-center items-center">
-              <button
-                class="w-full md:w-[80%] bg-secondary p-2 text-white rounded-lg font-bold text-[20px]"
-              >
-                En savoir plus
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="flex flex-col md:flex-row w-full items-center gap-4 md:gap-16 bg-[#DEE9F4] p-3 rounded-lg"
-          >
-            <!-- left -->
-            <div class="flex-[4] text-[18px] font-normal">
-              <div>
-                Recrutement multipostes pour le compte de la Société Immobilière
-                et d’Aménagement Urbain (SImAU)
-              </div>
-
-              <div class="text-[14px] uppercase">
-                Type de contrat:
-                <span class="font-semibold text-green">CDD</span>
-              </div>
-
-              <div class="text-[14px] uppercase">
-                Date de publication:
-                <span class="font-semibold capitalize">05 Mai 2024</span>
-              </div>
-            </div>
-
-            <!-- center -->
-            <div class="flex-[1] text-[18px] font-semibold text-[red]">
-              05 Jun 2024 à 00:00
-            </div>
-
-            <!-- right -->
-            <div class="flex-[1] flex justify-center items-center">
-              <button
-                class="w-full md:w-[80%] bg-secondary p-2 text-white rounded-lg font-bold text-[20px]"
-              >
-                En savoir plus
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="flex flex-col md:flex-row w-full items-center gap-4 md:gap-16 bg-transparent border border-[#DEE9F4] p-3 rounded-lg"
-          >
-            <!-- left -->
-            <div class="flex-[4] text-[18px] font-normal">
-              <div>
-                Avis de recrutement d'un Conducteur de véhicules au profit de la
-                SBIR S.A.
-              </div>
-
-              <div class="text-[14px] uppercase">
-                Type de contrat:
-                <span class="font-semibold text-green">CDD</span>
-              </div>
-
-              <div class="text-[14px] uppercase">
-                Date de publication:
-                <span class="font-semibold capitalize">05 Mai 2024</span>
-              </div>
-            </div>
-
-            <!-- center -->
-            <div class="flex-[1] text-[18px] font-semibold text-[red]">
-              05 Jun 2024 à 00:00
-            </div>
-
-            <!-- right -->
-            <div class="flex-[1] flex justify-center items-center">
-              <button
-                class="w-full md:w-[80%] bg-secondary p-2 text-white rounded-lg font-bold text-[20px]"
-              >
-                En savoir plus
-              </button>
+            <div
+              class="grid lg:grid-cols-1 w-[100%] gap-4 service_container p-4 py-8"
+              id="service_container"
+            >
+              <!-- Service items will be dynamically inserted here -->
             </div>
           </div>
         </div>
